@@ -1,14 +1,19 @@
 <template>
     <header>
 
-        prova
+        <div class="header-top">
+            sono header top
+        </div>
 
+        <div class="header-bot">
+            sono header bot
+        </div>
     </header>
 </template>
 
 <script>
 export default {
-    name: HeaderComponent
+    name: 'HeaderComponent',
 
 
 }
