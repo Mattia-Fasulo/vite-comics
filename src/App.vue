@@ -4,13 +4,14 @@
   <HeaderComponent />
   <main>
 
-    sono main
+    content goes here
 
   </main>
   <FooterComponent />
 </template>
 
 <script >
+
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 export default {
@@ -24,5 +25,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use './assets/styles/partials/mixins' as *;
+@use './assets/styles/partials/variables' as *;
 
+main {
+  @include center();
+  color: white;
+  background-color: black;
+  height: 100px;
+}
 </style>
