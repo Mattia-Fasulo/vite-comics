@@ -62,7 +62,7 @@ export default {
 
         li {
             list-style: none;
-            margin: 0.5rem;
+            padding: 5px 15px;
 
             a {
                 text-decoration: none;

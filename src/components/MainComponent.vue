@@ -2,13 +2,17 @@
     <main>
 
     </main>
-    <div class="component">
+    <SectionMenu />
 
-    </div>
+
 </template>
 
 <script>
+import SectionMenu from './SectionMenu.vue';
 export default {
+    components: {
+        SectionMenu
+    },
     name: 'MainComponent'
 }
 </script>
@@ -22,10 +26,5 @@ main {
     color: white;
     background-color: black;
     height: 140px;
-}
-
-.component {
-    background-color: $blu;
-    height: 160px;
 }
 </style>

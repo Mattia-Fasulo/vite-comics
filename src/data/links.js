@@ -169,29 +169,58 @@ const menuFooter = [
 const socials = [
     {
         title: 'Facebook',
-        img: "./public/img/footer-facebook.png",
+        img: "/img/footer-facebook.png",
         url: "#"
     },
     {
         title: 'Periscope',
-        img: "./public/img/footer-periscope.png",
+        img: "/img/footer-periscope.png",
         url: "#"
     },
     {
         title: "Pinterest",
-        img: "./public/img/footer-pinterest.png",
+        img: "/img/footer-pinterest.png",
         url: "#"
     },
     {
         title: "Twitter",
-        img: "./public/img/footer-twitter.png",
+        img: "/img/footer-twitter.png",
         url: "#"
     },
     {
         title: "Youtube",
-        img: "./public/img/footer-youtube.png",
+        img: "/img/footer-youtube.png",
         url: "#"
     }
 ]
 
-export { links, menuFooter, socials };
+const menuSection = [
+    {
+        title: "Digital Comics",
+        img: "/img/buy-comics-digital-comics.png",
+        ulr: "#"
+    },
+    {
+        title: "Dc Merchandise",
+        img: "/img/buy-comics-merchandise.png",
+        ulr: "#"
+    },
+    {
+        title: "Subscription",
+        img: "/img/buy-comics-subscriptions.png",
+        ulr: "#"
+    },
+    {
+        title: "Comic Shop Location",
+        img: "/img/buy-comics-shop-locator.png",
+        ulr: "#"
+    },
+    {
+        title: "Dc Power Visa",
+        img: "/img/buy-dc-power-visa.svg",
+        ulr: "#"
+    }
+
+]
+
+export { links, menuFooter, socials, menuSection };
