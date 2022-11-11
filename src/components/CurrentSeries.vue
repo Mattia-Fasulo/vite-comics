@@ -5,7 +5,7 @@
         </div>
         <div class="container row">
 
-            <Card v-for="(item, index) in comics" :key="index" :obj="item" />
+            <Card v-for="(item, index) in cards" :key="index" :obj="item" />
 
         </div>
         <div class="container row">
