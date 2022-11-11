@@ -1,17 +1,24 @@
 <template>
+
+    <JumboMain />
+
     <main>
 
-    </main>
-    <SectionMenu />
 
+
+    </main>
+
+    <SectionMenu />
 
 </template>
 
 <script>
+import JumboMain from './JumboMain.vue';
 import SectionMenu from './SectionMenu.vue';
 export default {
     components: {
-        SectionMenu
+        SectionMenu,
+        JumboMain
     },
     name: 'MainComponent'
 }

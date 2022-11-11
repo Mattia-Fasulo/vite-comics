@@ -50,6 +50,7 @@ export default {
 .footer-btn {
 
     button {
+        cursor: pointer;
         padding: 10px;
         text-transform: uppercase;
         font-weight: 700;
@@ -72,6 +73,8 @@ export default {
     }
 
     h3 {
+        margin-right: 10px;
+        cursor: pointer;
         color: $blu;
         text-transform: uppercase;
     }

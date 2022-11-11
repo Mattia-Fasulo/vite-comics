@@ -10,7 +10,7 @@
                 <nav>
                     <ul>
                         <li v-for="(link, index) in navbar" :key="index">
-                            <a href="link.url">{{ link.text }}</a>
+                            <a :href="link.url">{{ link.text }}</a>
                         </li>
                     </ul>
                 </nav>

@@ -204,6 +204,7 @@ footer {
         font-size: 1rem;
         text-transform: uppercase;
         margin: 15px 0;
+
     }
 
     ul li {

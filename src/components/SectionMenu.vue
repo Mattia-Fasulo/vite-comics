@@ -7,7 +7,7 @@
                         <a :href="link.url"><img :src="link.img" alt="link.title"></a>
                     </div>
                     <div class="title-menu">
-                        <a href="link.url">{{ link.title }}</a>
+                        <a :href="link.url">{{ link.title }}</a>
                     </div>
                 </li>
             </ul>
@@ -50,6 +50,7 @@ section {
 
 
                 a {
+                    cursor: pointer;
                     text-decoration: none;
                 }
 
