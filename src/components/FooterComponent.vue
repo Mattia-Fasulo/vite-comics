@@ -46,8 +46,12 @@
         </div>
         <div class="footer-bot">
             <div class="container">
-
-
+                <div class="footer-btn">
+                    <button>Sign-Up Now</button>
+                </div>
+                <div class="footer-social">
+                    <h3>Fallow Us</h3>
+                </div>
             </div>
         </div>
 
@@ -211,6 +215,7 @@ footer {
         padding: 3px 0;
         font-size: 0.8rem;
 
+
         a {
             text-decoration: none;
             color: grey;
@@ -233,9 +238,16 @@ footer {
 }
 
 .footer-bot {
+
     position: relative;
     z-index: 100;
     height: 120px;
     background-color: $light-black;
+
+    .container {
+        @include center('horizontal');
+        justify-content: space-between;
+        height: 100%;
+    }
 }
 </style>

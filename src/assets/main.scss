@@ -1,4 +1,13 @@
+@use '../assets/styles/partials/mixins' as *;
+@use '../assets/styles/partials/variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+// @import '@fortawesome/fontawesome';
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
 
 * {
     margin: 0;
@@ -8,6 +17,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
