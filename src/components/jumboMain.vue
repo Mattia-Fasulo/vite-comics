@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import { cards } from '../data/links';
 export default {
     name: "JumboMain",
 
@@ -18,7 +17,7 @@ export default {
 
 .jumbo {
     height: 390px;
-    background: url('../../public/img/jumbotron.jpg');
+    background: url('/img/jumbotron.jpg');
     background-position-x: center;
     background-size: cover;
 

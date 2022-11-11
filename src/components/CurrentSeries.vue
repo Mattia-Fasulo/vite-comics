@@ -5,40 +5,39 @@
         </div>
         <div class="container row">
 
-            <div class="card" v-for="(game, index) in games" :key="index">
-                <div class="card-img">
-                    <img :src="game.thumb" :alt="game.series">
-                </div>
-                <h4>{{ game.series }}</h4>
-            </div>
+            <Card v-for="(item, index) in comics" :key="index" :obj="item" />
 
-
-
-
+        </div>
+        <div class="container row">
+            <button type="button" class="btn-current-series">Load More</button>
         </div>
     </div>
 </template>
 
 <script>
-import { cards } from '../data/links';
-
+import { comics } from '../data/links';
+import Card from './Card.vue';
 export default {
     name: "CurrentSeries",
+    components: {
+        Card
+    },
     data() {
         return {
-            games: cards
+            cards: comics
         }
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @use '../assets/styles/partials/mixins' as *;
 @use '../assets/styles/partials/variables' as *;
 
 
 .current-series {
     position: relative;
+    padding: 50px 0 40px;
     color: white;
     background-color: black;
     min-height: 140px;
@@ -56,25 +55,19 @@ export default {
 
 .row {
     @include center();
-    padding-top: 50px;
+    padding-top: 0px;
     flex-flow: row wrap;
 
-    .card {
-        flex-basis: calc((100%) / 6);
-        height: 300px;
-        padding: 10px;
 
-        .card-img {
-            overflow: hidden;
-            height: 200px;
-        }
+}
 
-        h4 {
-            padding: 15px 0;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 300;
-        }
-    }
+.btn-current-series {
+    cursor: pointer;
+    width: 200px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    background-color: $blu;
+    text-transform: uppercase;
 }
 </style>
