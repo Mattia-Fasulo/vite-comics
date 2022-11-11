@@ -7,6 +7,10 @@
     content goes here
 
   </main>
+  <div class="component">
+
+
+  </div>
   <FooterComponent />
 </template>
 
@@ -32,6 +36,11 @@ main {
   @include center();
   color: white;
   background-color: black;
-  height: 100px;
+  height: 140px;
+}
+
+.component {
+  background-color: $blu;
+  height: 160px;
 }
 </style>

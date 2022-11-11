@@ -97,7 +97,7 @@ export default {
 
 .logo {
     height: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
 
     img {
         height: 100%;
@@ -118,7 +118,7 @@ export default {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $light-black;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 font-weight: 600;
             }
         }
