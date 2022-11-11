@@ -44,16 +44,7 @@
 
             </div>
         </div>
-        <div class="footer-bot">
-            <div class="container">
-                <div class="footer-btn">
-                    <button>Sign-Up Now</button>
-                </div>
-                <div class="footer-social">
-                    <h3>Fallow Us</h3>
-                </div>
-            </div>
-        </div>
+        <FooterBottom />
 
 
 
@@ -61,8 +52,12 @@
 </template>
 
 <script>
+import FooterBottom from '../components/FooterBottom.vue';
 export default {
     name: 'FooterComponent',
+    components: {
+        FooterBottom,
+    },
     data() {
         return {
             comics: [
@@ -178,6 +173,7 @@ export default {
 @use '../assets/styles/partials/mixins' as *;
 @use '../assets/styles/partials/variables' as *;
 
+
 footer {
     color: white;
 }
@@ -235,19 +231,5 @@ footer {
         top: -50px;
     }
 
-}
-
-.footer-bot {
-
-    position: relative;
-    z-index: 100;
-    height: 120px;
-    background-color: $light-black;
-
-    .container {
-        @include center('horizontal');
-        justify-content: space-between;
-        height: 100%;
-    }
 }
 </style>

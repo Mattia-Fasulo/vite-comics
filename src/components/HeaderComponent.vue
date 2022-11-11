@@ -9,7 +9,7 @@
             <div class="navbar">
                 <nav>
                     <ul>
-                        <li v-for="(link, index) in links" :key="index">
+                        <li v-for="(link, index) in navbar" :key="index">
                             <a href="link.url">{{ link.text }}</a>
                         </li>
                     </ul>
@@ -20,62 +20,12 @@
 </template>
 
 <script>
+import { links } from '../data/links.js'
 export default {
     name: 'HeaderComponent',
     data() {
         return {
-            links: [
-                {
-                    text: "Characters",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Comics",
-                    url: "#",
-                    current: true,
-                },
-                {
-                    text: "Movies",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Tv",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Games",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Collectibles",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Video",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Fans",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "News",
-                    url: "#",
-                    current: false,
-                },
-                {
-                    text: "Shop",
-                    url: "#",
-                    current: false,
-                },
-            ],
+            navbar: links,
         }
     }
 
