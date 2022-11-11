@@ -2,11 +2,7 @@
 
     <JumboMain />
 
-    <main>
-
-
-
-    </main>
+    <CurrentSeries />
 
     <SectionMenu />
 
@@ -15,10 +11,12 @@
 <script>
 import JumboMain from './JumboMain.vue';
 import SectionMenu from './SectionMenu.vue';
+import CurrentSeries from './CurrentSeries.vue';
 export default {
     components: {
         SectionMenu,
-        JumboMain
+        JumboMain,
+        CurrentSeries
     },
     name: 'MainComponent'
 }
@@ -27,11 +25,4 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/mixins' as *;
 @use '../assets/styles/partials/variables' as *;
-
-main {
-    @include center();
-    color: white;
-    background-color: black;
-    height: 140px;
-}
 </style>
