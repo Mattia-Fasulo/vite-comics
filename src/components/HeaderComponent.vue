@@ -14,6 +14,7 @@
                         </li>
                     </ul>
                 </nav>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </header>
@@ -56,6 +57,12 @@ export default {
 }
 
 .navbar {
+    i {
+        cursor: pointer;
+        color: $blu;
+        font-size: 2.5rem;
+        display: none
+    }
 
     ul {
         @include center();
@@ -86,6 +93,22 @@ export default {
                     background-color: $blu;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .container {
+        margin: 0 50px;
+    }
+
+    .navbar {
+        i {
+            display: block
+        }
+
+        nav {
+            display: none;
         }
     }
 }
