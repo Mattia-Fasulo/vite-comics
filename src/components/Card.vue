@@ -21,13 +21,18 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 .card {
-    flex-basis: calc((100% - 100px) / 6);
+    flex-basis: calc((100% - 70px) / 6);
     height: 300px;
     padding: 10px;
 
     .card-img {
         overflow: hidden;
         height: 200px;
+        object-fit: cover;
+
+        img {
+            object-fit: cover;
+        }
     }
 
     h4 {
@@ -35,6 +40,46 @@ export default {
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 300;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        flex-basis: calc((100% - 70px) / 5);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        flex-basis: calc((100% - 70px) / 4);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .card {
+        flex-basis: calc((100% - 70px) / 3);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .card {
+        flex-basis: calc((100% - 70px) / 2);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .card {
+        h4 {
+            text-align: center;
+        }
+
+        .card-img {
+            text-align: center;
+        }
+
+        flex-basis: 100%;
     }
 }
 </style>

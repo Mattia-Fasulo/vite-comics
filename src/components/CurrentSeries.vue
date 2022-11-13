@@ -71,4 +71,11 @@ export default {
     background-color: $blu;
     text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 769px) {
+    .title-current-series {
+        left: 75px;
+    }
+}
 </style>
