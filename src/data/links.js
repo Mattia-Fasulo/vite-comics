@@ -51,7 +51,7 @@ const links = [
     },
 ];
 
-const menuFooter = [
+const verticalList = [
     {
         title: "comics",
         links: [
@@ -87,6 +87,25 @@ const menuFooter = [
             },
         ]
     },
+    {
+        title: "shop",
+        links: [
+            {
+                text: "Shop Dc",
+                url: "#"
+            },
+            {
+                text: "Shop Dc Collection",
+                url: "#"
+            }
+        ]
+    }
+
+];
+
+
+
+const otherList = [
     {
         title: "dc",
         links: [
@@ -164,7 +183,9 @@ const menuFooter = [
 
         ]
     }
-];
+]
+
+
 
 const socials = [
     {
@@ -298,4 +319,4 @@ const comics = [
     }
 ]
 
-export { links, menuFooter, socials, menuSection, comics };
+export { links, verticalList, socials, menuSection, comics };

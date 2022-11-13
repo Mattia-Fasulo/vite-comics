@@ -7,21 +7,15 @@
             <div class="container">
                 <div class="footer-list">
                     <div class="col">
-                        <div>
-                            <h3>Dc Comics</h3>
+                        <div v-for="(item, index) in ListV" :key="index">
+                            <h3>{{ item.title }}</h3>
                             <ul>
-                                <li v-for="(link, index) in comics" :key="index">
+                                <li v-for="(link, index) in item.links" :key="index">
                                     <a href="link.url">{{ link.text }}</a>
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>Shop</h3>
-                            <ul>
-                                <li><a href="#">Shop Dc</a></li>
-                                <li><a href="#">Shop Dc Collection</a></li>
-                            </ul>
-                        </div>
+
 
                     </div>
                     <div class="col">
@@ -56,6 +50,7 @@
 </template>
 
 <script>
+import { verticalList } from '../data/links';
 import FooterBottom from '../components/FooterBottom.vue';
 export default {
     name: 'FooterComponent',
@@ -64,38 +59,8 @@ export default {
     },
     data() {
         return {
-            comics: [
-                {
-                    text: "Characters",
-                    url: "#",
-                },
-                {
-                    text: "Comics",
-                    url: "#",
-                },
-                {
-                    text: "Movies",
-                    url: "#",
-                },
-                {
-                    text: "Tv",
-                    url: "#",
-                },
-                {
-                    text: "Games",
-                    url: "#",
-                },
+            ListV: verticalList,
 
-                {
-                    text: "Video",
-                    url: "#",
-                },
-
-                {
-                    text: "News",
-                    url: "#",
-                },
-            ],
             dc: [
                 {
                     text: "Terms of Use",
