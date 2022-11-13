@@ -53,6 +53,7 @@ export default {
     text-transform: uppercase;
 }
 
+
 .row {
     @include center();
     padding-top: 0px;
