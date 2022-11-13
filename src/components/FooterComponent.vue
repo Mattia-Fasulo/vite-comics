@@ -7,17 +7,21 @@
             <div class="container">
                 <div class="footer-list">
                     <div class="col">
-                        <h3>Dc Comics</h3>
-                        <ul>
-                            <li v-for="(link, index) in comics" :key="index">
-                                <a href="link.url">{{ link.text }}</a>
-                            </li>
-                        </ul>
-                        <h3>Shop</h3>
-                        <ul>
-                            <li><a href="#">Shop Dc</a></li>
-                            <li><a href="#">Shop Dc Collection</a></li>
-                        </ul>
+                        <div>
+                            <h3>Dc Comics</h3>
+                            <ul>
+                                <li v-for="(link, index) in comics" :key="index">
+                                    <a href="link.url">{{ link.text }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#">Shop Dc</a></li>
+                                <li><a href="#">Shop Dc Collection</a></li>
+                            </ul>
+                        </div>
 
                     </div>
                     <div class="col">

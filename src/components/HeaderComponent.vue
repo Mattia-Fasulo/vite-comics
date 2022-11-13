@@ -10,7 +10,7 @@
                 <nav>
                     <ul>
                         <li v-for="(link, index) in navbar" :key="index">
-                            <a :href="link.url">{{ link.text }}</a>
+                            <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,6 +63,7 @@ export default {
         li {
             list-style: none;
             padding: 5px 15px;
+            position: relative;
 
             a {
                 text-decoration: none;
@@ -70,6 +71,20 @@ export default {
                 color: $light-black;
                 font-size: 0.8rem;
                 font-weight: 600;
+            }
+
+            &:hover,
+            .active {
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 70px;
+                    right: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: $blu;
+                }
             }
         }
     }
