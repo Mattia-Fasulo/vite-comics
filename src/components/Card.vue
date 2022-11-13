@@ -21,7 +21,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 .card {
-    flex-basis: calc((100% - 130px) / 6);
+    flex-basis: calc((100% - 100px) / 6);
     height: 300px;
     padding: 10px;
 
